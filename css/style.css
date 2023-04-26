@@ -195,7 +195,7 @@ img {
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-        border-radius: 1.5rem 1.5rem 0 0;
+        border-radius: 1rem 1rem 0 0;
         transition: .3s;
 
     }
@@ -380,6 +380,15 @@ img {
     color: var(--first-color-alt);
 }
 
+.button--white {
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button--white:hover {
+    background-color: #faf8f8;
+}
+
 /*==================== ABOUT ====================*/
 .about__img {
     width: 12.5rem;
@@ -421,6 +430,12 @@ img {
 .about__buttons {
     display: flex;
     justify-content: center;
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.about__buttons:hover .button__icon {
+
+    transform: translateY(.4rem);
 }
 
 /*==================== SKILLS ====================*/
@@ -716,10 +731,100 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container {
+    overflow: initial;
+}
 
+.portfolio__content {
+    padding: 0 1.5rem;
+}
+
+.portfolio__img {
+    width: 16.6rem;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+
+}
+
+.swiper-portfolio-icon {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev {
+    left: -.5rem;
+}
+
+.swiper-button-next {
+    right: -.5rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+    outline: none;
+}
 
 /*==================== PROJECT IN MIND ====================*/
+.project {
+    text-align: center;
 
+}
+
+.project__bg {
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+
+}
+
+.project__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project__description {
+    margin-bottom: var(--mb-1-5);
+}
+
+.project__description,
+.project__title {
+    color: #fff;
+
+}
+
+.project__img {
+    width: 14.5rem;
+    justify-self: center;
+}
 
 /*==================== TESTIMONIAL ====================*/
 

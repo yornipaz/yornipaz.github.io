@@ -83,7 +83,20 @@ modalCloses.forEach((modalClose) => {
   });
 });
 /*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper(".portfolio__container", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  cssMode: true,
 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 /*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
