@@ -342,7 +342,7 @@ img {
 }
 
 
-/*==================== BUTTONS ====================*/
+
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -390,6 +390,10 @@ img {
 
 .button--white:hover {
     background-color: #faf8f8;
+}
+
+.button__submit {
+    appearance: none;
 }
 
 .about__img {
